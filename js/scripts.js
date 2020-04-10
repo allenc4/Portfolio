@@ -95,8 +95,16 @@ $(document).ready(function() {
             // Add dates to the timeline if exists
             $this.find('.vtimeline-content').each(function() {
                 var date = $(this).data('date');
-                if (date) { // Prepend if exists
-                    $(this).parent().prepend('<span class="vtimeline-date">'+date+'</span>');
+                if (date) {
+                    // If multiple dates, split
+                    date = date.split('\\n');
+
+                    let dateHtml = '';
+                    for (let index in date) {
+                        dateHtml += '<p>'+date[index]+'</p>';
+                    }
+                    $(this).parent().prepend('<div class="vtimeline-date">' + dateHtml + '</div>');
+                   
                 }
             });
     
