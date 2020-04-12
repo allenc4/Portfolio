@@ -29,7 +29,7 @@
     <header>
        
         <nav class="navbar navbar-expand-md fixed-top navbar-light">
-            <div class="container">
+            <div class="mycontainer">
                 <!-- Navbar content -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -79,7 +79,7 @@
     <!-- End #lead -->
 
     <div id="about">
-        <div class="container">
+        <div class="mycontainer">
             <div class="row">
                 <div class="col-md-4">
                     <h2 class="heading">About Me</h2>
@@ -102,7 +102,7 @@
     <!-- End #about -->
 
     <div id="experience" class="background-alt">
-        <div class="container">
+        <div class="mycontainer">
             <h2 class="heading">Experience</h2>
             <div id="experience-timeline">
                 <div data-date="September 2016 – Current">
@@ -151,7 +151,7 @@
     <!-- End #experience -->
 
     <div id="education">
-        <div class="container">
+        <div class="mycontainer">
             <h2 class="heading">Education</h2>
             <div class="education-block">
                 <h3>Wentworth Institute of Technology</h3>
@@ -168,20 +168,43 @@
     <!-- End #education -->
 
     <div id="projects" class="background-alt">
-        <div class="container">
+        <div class="mycontainer">
             <h2 class="heading">Projects</h2>
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/VizSort.png"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h3>VizSort</h3>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="three-button-info"></div>
+                            </div>
+                        </div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            Webapp for visualizing different sorting algorithms
                         </p>
-                        <a href="#">View Project</a>
+                        <ul class="project-details">
+                            <li>Built with React Front End</li>
+                            <li>Javascript components for sorting algorithm implementations and visual components</li>
+                            <li>Basic Bootstrap CSS design</li>
+                        </ul>
+                        <div class="actions">
+                            <a aria-label="Visit VizSort Web App" 
+                                href="http://vizsort.chris-allen.me/" target="_blank" data-tooltip="View Online" 
+                                class="btn btn-raised btn-primary btn-lg btn-fab">
+                                    <i class="fa fa-external-link"></i>
+                            </a>
+                            <a aria-label="View Source" 
+                                href="https://github.com/allenc4/VizSort" target="_blank" data-tooltip="View Source" 
+                                class="btn btn-raised btn-primary btn-lg btn-fab">
+                                    <i class="fa fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -189,26 +212,46 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/UnitedSelfDefense.jpg"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h3>United Self Defense</h3>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="three-button-info"></div>
+                            </div>
+                        </div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            Business website for United Self Defense
                         </p>
-                        <a href="#">View Project</a>
+                        <ul class="project-details">
+                            <li>Developed with PHP using Laravel Framework</li>
+                            <li>Photo Gallery Interface designed with PHP</li>
+                            <li>Admin Console built with AngularJS 2.0</li>
+                            <li>Mass emailing, email templates, user management, etc</li>
+                        </ul>
+                        <div class="actions">
+                            <a aria-label="Visit United Self Defense" 
+                                href="http://unitedselfdefense.chris-allen.me/" target="_blank" data-tooltip="View Online" 
+                                class="btn btn-raised btn-primary btn-lg btn-fab">
+                                    <i class="fa fa-external-link"></i>
+                            </a>
+                        </div>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+
             </div>
         </div>
     </div>
     <!-- End #projects -->
 
     <div id="skills">
-        <div class="container">
+        <div class="mycontainer">
             <h2 class="heading">Knowledgeable In</h2>
             <ul>
                 <li>Java</li>
@@ -233,7 +276,7 @@
     <!-- End #skills -->
 
     <div id="contact">
-        <div class="container">
+        <div class="mycontainer">
             <h2>Contact Me</h2>
             <div id="contact-form">
                 <form method="POST" action="https://formspree.io/email@email.com">
@@ -250,7 +293,7 @@
 
     
     <footer>
-        <div class="container">
+        <div class="mycontainer">
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
